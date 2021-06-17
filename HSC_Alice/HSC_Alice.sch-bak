@@ -1,0 +1,370 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U?
+U 1 1 60CAE630
+P 2000 3100
+F 0 "U?" H 1950 1850 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 1950 1750 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2000 3100 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2000 3100 50  0001 C CNN
+	1    2000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60CB0ADC
+P 2000 1050
+F 0 "#PWR?" H 2000 900 50  0001 C CNN
+F 1 "+5V" H 2100 1125 50  0000 C CNN
+F 2 "" H 2000 1050 50  0001 C CNN
+F 3 "" H 2000 1050 50  0001 C CNN
+	1    2000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1300 2000 1050
+Wire Wire Line
+	1900 1300 1900 1050
+Wire Wire Line
+	1900 1050 2000 1050
+Connection ~ 2000 1050
+Wire Wire Line
+	2100 1300 2100 1050
+Wire Wire Line
+	2100 1050 2000 1050
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CB375D
+P 1950 5050
+F 0 "#PWR?" H 1950 4800 50  0001 C CNN
+F 1 "GND" H 1955 4877 50  0000 C CNN
+F 2 "" H 1950 5050 50  0000 C CNN
+F 3 "" H 1950 5050 50  0000 C CNN
+	1    1950 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4900 2000 5050
+Wire Wire Line
+	2000 5050 1950 5050
+Wire Wire Line
+	1900 4900 1900 5050
+Wire Wire Line
+	1900 5050 1950 5050
+Connection ~ 1950 5050
+Wire Wire Line
+	1400 2900 1100 2900
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CB9220
+P 900 2900
+F 0 "#PWR?" H 900 2650 50  0001 C CNN
+F 1 "GND" V 905 2772 50  0000 R CNN
+F 2 "" H 900 2900 50  0000 C CNN
+F 3 "" H 900 2900 50  0000 C CNN
+	1    900  2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CB718A
+P 1000 2900
+F 0 "C?" V 1200 2900 50  0000 C CNN
+F 1 "1uF" V 1300 2900 50  0000 C CNN
+F 2 "" H 1000 2900 50  0001 C CNN
+F 3 "~" H 1000 2900 50  0001 C CNN
+	1    1000 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60CBB62F
+P 1400 2400
+F 0 "#PWR?" H 1400 2250 50  0001 C CNN
+F 1 "+5V" V 1415 2528 50  0000 L CNN
+F 2 "" H 1400 2400 50  0001 C CNN
+F 3 "" H 1400 2400 50  0001 C CNN
+	1    1400 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 60CBE3D0
+P 1200 1900
+F 0 "Y?" V 900 1750 50  0000 L CNN
+F 1 "16MHz" V 1050 1800 50  0000 L CNN
+F 2 "" H 1200 1900 50  0001 C CNN
+F 3 "~" H 1200 1900 50  0001 C CNN
+	1    1200 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CC4C62
+P 1000 1800
+F 0 "C?" V 750 1800 50  0000 C CNN
+F 1 "22pF" V 850 1800 50  0000 C CNN
+F 2 "" H 1000 1800 50  0001 C CNN
+F 3 "~" H 1000 1800 50  0001 C CNN
+	1    1000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CC55F8
+P 1000 2000
+F 0 "C?" V 1200 2000 50  0000 C CNN
+F 1 "22pF" V 1300 2000 50  0000 C CNN
+F 2 "" H 1000 2000 50  0001 C CNN
+F 3 "~" H 1000 2000 50  0001 C CNN
+	1    1000 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1800 1200 1800
+Wire Wire Line
+	1400 2000 1200 2000
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CC675E
+P 900 1800
+F 0 "#PWR?" H 900 1550 50  0001 C CNN
+F 1 "GND" V 905 1672 50  0000 R CNN
+F 2 "" H 900 1800 50  0000 C CNN
+F 3 "" H 900 1800 50  0000 C CNN
+	1    900  1800
+	0    1    1    0   
+$EndComp
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CC70CE
+P 900 2000
+F 0 "#PWR?" H 900 1750 50  0001 C CNN
+F 1 "GND" V 905 1872 50  0000 R CNN
+F 2 "" H 900 2000 50  0000 C CNN
+F 3 "" H 900 2000 50  0000 C CNN
+	1    900  2000
+	0    1    1    0   
+$EndComp
+Connection ~ 1200 1800
+Wire Wire Line
+	1200 1800 1100 1800
+Connection ~ 1200 2000
+Wire Wire Line
+	1200 2000 1100 2000
+$Comp
+L Device:R_Small R?
+U 1 1 60CC84D3
+P 2950 3700
+F 0 "R?" V 2754 3700 50  0000 C CNN
+F 1 "10k" V 2845 3700 50  0000 C CNN
+F 2 "" H 2950 3700 50  0001 C CNN
+F 3 "~" H 2950 3700 50  0001 C CNN
+	1    2950 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 3700 2850 3700
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CCA029
+P 3050 3700
+F 0 "#PWR?" H 3050 3450 50  0001 C CNN
+F 1 "GND" V 3055 3572 50  0000 R CNN
+F 2 "" H 3050 3700 50  0000 C CNN
+F 3 "" H 3050 3700 50  0000 C CNN
+	1    3050 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60CCB501
+P 1050 750
+F 0 "#PWR?" H 1050 600 50  0001 C CNN
+F 1 "+5V" H 1065 923 50  0000 C CNN
+F 2 "" H 1050 750 50  0001 C CNN
+F 3 "" H 1050 750 50  0001 C CNN
+	1    1050 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60CCBFB7
+P 1050 900
+F 0 "R?" H 1109 946 50  0000 L CNN
+F 1 "10k" H 1109 855 50  0000 L CNN
+F 2 "" H 1050 900 50  0001 C CNN
+F 3 "~" H 1050 900 50  0001 C CNN
+	1    1050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CCD82A
+P 1050 1150
+F 0 "C?" V 800 1150 50  0000 C CNN
+F 1 "100nF" V 900 1150 50  0000 C CNN
+F 2 "" H 1050 1150 50  0001 C CNN
+F 3 "~" H 1050 1150 50  0001 C CNN
+	1    1050 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60CCE1FE
+P 700 1200
+F 0 "SW?" V 800 1450 50  0000 R CNN
+F 1 "SW_Push" V 900 1550 50  0000 R CNN
+F 2 "" H 700 1400 50  0001 C CNN
+F 3 "~" H 700 1400 50  0001 C CNN
+	1    700  1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CCF260
+P 700 1400
+F 0 "#PWR?" H 700 1150 50  0001 C CNN
+F 1 "GND" H 705 1227 50  0000 C CNN
+F 2 "" H 700 1400 50  0000 C CNN
+F 3 "" H 700 1400 50  0000 C CNN
+	1    700  1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 800  1050 750 
+Wire Wire Line
+	1050 1050 1050 1000
+Wire Wire Line
+	1050 1000 700  1000
+Connection ~ 1050 1000
+Text GLabel 1300 1000 2    50   Output ~ 0
+RST
+Wire Wire Line
+	1050 1000 1300 1000
+Text GLabel 1400 1600 0    50   Input ~ 0
+RST
+Wire Wire Line
+	1050 1250 1050 1400
+Wire Wire Line
+	1050 1400 700  1400
+Connection ~ 700  1400
+$Comp
+L Device:C_Small C?
+U 1 1 60CDFE12
+P 1550 350
+F 0 "C?" V 1300 350 50  0000 C CNN
+F 1 "10uF" V 1400 350 50  0000 C CNN
+F 2 "" H 1550 350 50  0001 C CNN
+F 3 "~" H 1550 350 50  0001 C CNN
+	1    1550 350 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CE0F31
+P 1900 350
+F 0 "C?" V 1650 350 50  0000 C CNN
+F 1 "22pF" V 1750 350 50  0000 C CNN
+F 2 "" H 1900 350 50  0001 C CNN
+F 3 "~" H 1900 350 50  0001 C CNN
+	1    1900 350 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CE1592
+P 2250 350
+F 0 "C?" V 2000 350 50  0000 C CNN
+F 1 "100nF" V 2100 350 50  0000 C CNN
+F 2 "" H 2250 350 50  0001 C CNN
+F 3 "~" H 2250 350 50  0001 C CNN
+	1    2250 350 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60CE1A8C
+P 2600 350
+F 0 "C?" V 2350 350 50  0000 C CNN
+F 1 "100nF" V 2450 350 50  0000 C CNN
+F 2 "" H 2600 350 50  0001 C CNN
+F 3 "~" H 2600 350 50  0001 C CNN
+	1    2600 350 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 100  1900 100 
+Wire Wire Line
+	2600 100  2600 250 
+Wire Wire Line
+	2600 600  2250 600 
+Wire Wire Line
+	1550 600  1550 450 
+Wire Wire Line
+	2600 450  2600 600 
+Wire Wire Line
+	1550 250  1550 100 
+Wire Wire Line
+	1900 600  1900 450 
+Wire Wire Line
+	1900 250  1900 100 
+Connection ~ 1900 600 
+Wire Wire Line
+	1900 600  1550 600 
+Connection ~ 1900 100 
+Wire Wire Line
+	1900 100  2075 100 
+Wire Wire Line
+	2250 600  2250 450 
+Wire Wire Line
+	2250 250  2250 100 
+Connection ~ 2250 600 
+Wire Wire Line
+	2250 600  2075 600 
+Connection ~ 2250 100 
+Wire Wire Line
+	2250 100  2600 100 
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60CEFDFE
+P 2075 600
+F 0 "#PWR?" H 2075 350 50  0001 C CNN
+F 1 "GND" H 2080 427 50  0000 C CNN
+F 2 "" H 2075 600 50  0000 C CNN
+F 3 "" H 2075 600 50  0000 C CNN
+	1    2075 600 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2075 600 
+Wire Wire Line
+	2075 600  1900 600 
+$Comp
+L power:+5V #PWR?
+U 1 1 60CF0986
+P 2075 100
+F 0 "#PWR?" H 2075 -50 50  0001 C CNN
+F 1 "+5V" H 2175 175 50  0000 C CNN
+F 2 "" H 2075 100 50  0001 C CNN
+F 3 "" H 2075 100 50  0001 C CNN
+	1    2075 100 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2075 100 
+Wire Wire Line
+	2075 100  2250 100 
+$EndSCHEMATC
