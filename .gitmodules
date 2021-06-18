@@ -7,3 +7,6 @@
 [submodule "HSC_Alice/Keebio-Parts.pretty"]
 	path = HSC_Alice/Keebio-Parts.pretty
 	url = https://github.com/keebio/Keebio-Parts.pretty
+[submodule "HSC_Alice/keebio-components"]
+	path = HSC_Alice/keebio-components
+	url = https://github.com/keebio/keebio-components
