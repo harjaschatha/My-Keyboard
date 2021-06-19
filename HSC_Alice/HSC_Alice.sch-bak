@@ -1966,7 +1966,7 @@ U 1 1 60DCBE2F
 P 11100 4100
 F 0 "MX101" H 11133 4323 60  0000 C CNN
 F 1 "ENTER" H 11133 4249 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 10475 4075 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.25U-NoLED" H 10475 4075 60  0001 C CNN
 F 3 "" H 10475 4075 60  0001 C CNN
 	1    11100 4100
 	1    0    0    -1  
@@ -3016,4 +3016,18 @@ Text GLabel 2750 4450 0    50   Input ~ 0
 Row4
 Text GLabel 2750 5200 0    50   Input ~ 0
 Row5
+Text GLabel 775  900  0    50   Input ~ 0
+Col0
+Text GLabel 775  1000 0    50   Input ~ 0
+Col1
+Text GLabel 775  1300 0    50   Input ~ 0
+Col2
+Text GLabel 775  1400 0    50   Input ~ 0
+Col3
+Text GLabel 775  1500 0    50   Input ~ 0
+Col4
+Text GLabel 775  1600 0    50   Input ~ 0
+Col5
+Text GLabel 775  1700 0    50   Input ~ 0
+Col6
 $EndSCHEMATC
