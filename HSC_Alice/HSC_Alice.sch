@@ -1185,7 +1185,7 @@ U 1 1 60D80E23
 P 11600 2600
 F 0 "MX105" H 11633 2823 60  0000 C CNN
 F 1 "\\" H 11633 2749 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 10975 2575 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 10975 2575 60  0001 C CNN
 F 3 "" H 10975 2575 60  0001 C CNN
 	1    11600 2600
 	1    0    0    -1  
@@ -1293,7 +1293,7 @@ $Comp
 L MX_Alps_Hybrid:MX-NoLED MX28
 U 1 1 60DA7E07
 P 5100 3350
-F 0 "MX28" H 5133 3573 60  0000 C CNN
+F 0 "MX28" H 4875 3350 60  0000 C CNN
 F 1 "CAPS" H 5133 3499 20  0000 C CNN
 F 2 "MX_Alps_Hybrid:MX-1.75U-NoLED" H 4475 3325 60  0001 C CNN
 F 3 "" H 4475 3325 60  0001 C CNN
@@ -1889,7 +1889,7 @@ U 1 1 60DCBE23
 P 10600 4100
 F 0 "MX95" H 10633 4323 60  0000 C CNN
 F 1 "RSHIFT" H 10633 4249 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1.75U-NoLED" H 9975 4075 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.25U-NoLED" H 9975 4075 60  0001 C CNN
 F 3 "" H 9975 4075 60  0001 C CNN
 	1    10600 4100
 	1    0    0    -1  
@@ -1931,9 +1931,9 @@ $Comp
 L MX_Alps_Hybrid:MX-NoLED MX6
 U 1 1 60DE3351
 P 3100 4850
-F 0 "MX6" H 3133 5073 60  0000 C CNN
+F 0 "MX6" H 2900 4900 60  0000 C CNN
 F 1 "P0" H 3133 4999 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-2U-NoLED" H 2475 4825 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 2475 4825 60  0001 C CNN
 F 3 "" H 2475 4825 60  0001 C CNN
 	1    3100 4850
 	1    0    0    -1  
@@ -2087,7 +2087,7 @@ U 1 1 60DE33A5
 P 6600 4850
 F 0 "MX48" H 6633 5073 60  0000 C CNN
 F 1 "SPACE" H 6633 4999 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-2U-NoLED" H 5975 4825 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.75U-ReversedStabilizers-NoLED" H 5975 4825 60  0001 C CNN
 F 3 "" H 5975 4825 60  0001 C CNN
 	1    6600 4850
 	1    0    0    -1  
@@ -2175,7 +2175,7 @@ U 1 1 60DE33D5
 P 8600 4850
 F 0 "MX72" H 8633 5073 60  0000 C CNN
 F 1 "SPACE" H 8633 4999 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-2.75U-NoLED" H 7975 4825 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.75U-ReversedStabilizers-NoLED" H 7975 4825 60  0001 C CNN
 F 3 "" H 7975 4825 60  0001 C CNN
 	1    8600 4850
 	1    0    0    -1  
@@ -2317,7 +2317,7 @@ Wire Wire Line
 	3250 3300 3250 4050
 Connection ~ 3250 4050
 Wire Wire Line
-	3250 4050 3250 4800
+	3250 4050 3250 4775
 Wire Wire Line
 	3750 750  3750 1050
 Connection ~ 3750 1050
@@ -3388,7 +3388,7 @@ Text GLabel -650 700  2    50   Input ~ 0
 Row0
 Text GLabel -650 800  2    50   Input ~ 0
 Row1
-Text GLabel -650 900  2    50   Input ~ 0
+Text GLabel -650 3100 2    50   Input ~ 0
 Row2
 Text GLabel -650 1000 2    50   Input ~ 0
 Row3
@@ -3420,9 +3420,9 @@ Text GLabel -650 2500 2    50   Input ~ 0
 Col11
 Text GLabel -650 2600 2    50   Input ~ 0
 Col12
-Text GLabel -650 2900 2    50   Input ~ 0
+Text GLabel -650 3600 2    50   Input ~ 0
 Col13
-Text GLabel -650 3100 2    50   Input ~ 0
+Text GLabel -650 3500 2    50   Input ~ 0
 Col14
 Text GLabel -650 3200 2    50   Input ~ 0
 Col15
@@ -3432,8 +3432,142 @@ Text GLabel -650 3400 2    50   Input ~ 0
 Col17
 Wire Wire Line
 	-25  2800 -25  3000
-Text GLabel -650 3500 2    50   Input ~ 0
+Text GLabel -650 2900 2    50   Input ~ 0
 Col2
 Wire Wire Line
 	-650 2800 -225 2800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX100
+U 1 1 60E64824
+P 3075 4825
+F 0 "MX100" H 2900 4925 60  0000 C CNN
+F 1 "P0" H 3108 4974 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers-NoLED" H 2450 4800 60  0001 C CNN
+F 3 "" H 2450 4800 60  0001 C CNN
+	1    3075 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 4775 3250 4775
+Connection ~ 3250 4775
+Wire Wire Line
+	3250 4775 3250 4800
+Wire Wire Line
+	3025 4975 3025 5000
+Wire Wire Line
+	3025 5000 3050 5000
+Connection ~ 3050 5000
+Wire Wire Line
+	5025 3475 5025 3500
+Wire Wire Line
+	5025 3500 5050 3500
+Connection ~ 5050 3500
+Wire Wire Line
+	5225 3275 5225 3300
+Wire Wire Line
+	5225 3300 5250 3300
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 6179FE4C
+P 2650 -1875
+F 0 "MX?" H 2683 -1652 60  0000 C CNN
+F 1 "P/" H 2683 -1726 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 2025 -1900 60  0001 C CNN
+F 3 "" H 2025 -1900 60  0001 C CNN
+	1    2650 -1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 6179FE58
+P 3150 -1875
+F 0 "MX?" H 3183 -1652 60  0000 C CNN
+F 1 "P*" H 3183 -1726 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 2525 -1900 60  0001 C CNN
+F 3 "" H 2525 -1900 60  0001 C CNN
+	1    3150 -1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 6179FE64
+P 2650 -1125
+F 0 "MX?" H 2683 -902 60  0000 C CNN
+F 1 "NLCK" H 2683 -976 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 2025 -1150 60  0001 C CNN
+F 3 "" H 2025 -1150 60  0001 C CNN
+	1    2650 -1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 6179FE70
+P 3150 -1125
+F 0 "MX?" H 3183 -902 60  0000 C CNN
+F 1 "P9" H 3183 -976 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 2525 -1150 60  0001 C CNN
+F 3 "" H 2525 -1150 60  0001 C CNN
+	1    3150 -1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 -2225 2800 -1925
+Wire Wire Line
+	2600 -975 2600 -225
+Wire Wire Line
+	3300 -2225 3300 -1925
+Wire Wire Line
+	3100 -975 3100 -225
+Text GLabel 2800 -2225 1    50   Input ~ 0
+Col0
+Text GLabel 3300 -2225 1    50   Input ~ 0
+Col1
+Text GLabel 3750 -1725 2    50   Input ~ 0
+Row0
+Wire Wire Line
+	2600 -225 3100 -225
+Connection ~ 3100 -225
+Wire Wire Line
+	3100 -225 3550 -225
+Text GLabel 3550 -225 2    50   Input ~ 0
+Row1
+Wire Wire Line
+	2800 -1925 2800 -1175
+Connection ~ 2800 -1925
+Wire Wire Line
+	3300 -1925 3300 -1175
+Connection ~ 3300 -1925
+$Comp
+L Device:D_Small D?
+U 1 1 618751ED
+P 2600 -1625
+F 0 "D?" V 2646 -1695 50  0000 R CNN
+F 1 "D_Small" V 2555 -1695 50  0000 R CNN
+F 2 "" V 2600 -1625 50  0001 C CNN
+F 3 "~" V 2600 -1625 50  0001 C CNN
+	1    2600 -1625
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 -1525 3100 -1525
+Wire Wire Line
+	3650 -1525 3650 -1725
+Wire Wire Line
+	3650 -1725 3750 -1725
+Wire Wire Line
+	3100 -1725 3100 -1525
+Connection ~ 3100 -1525
+Wire Wire Line
+	3100 -1525 3650 -1525
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX106
+U 1 1 61504233
+P 5075 3325
+F 0 "MX106" H 4875 3425 60  0000 C CNN
+F 1 "CAPS" H 5108 3474 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 4450 3300 60  0001 C CNN
+F 3 "" H 4450 3300 60  0001 C CNN
+	1    5075 3325
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
