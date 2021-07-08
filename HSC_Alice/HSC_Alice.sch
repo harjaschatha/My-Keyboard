@@ -378,4 +378,45 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1100 62
 	1    950  6225
 	1    0    0    -1  
 $EndComp
+$Comp
+L helix-cache:GND #PWR?
+U 1 1 60E67990
+P 900 7275
+F 0 "#PWR?" H 900 7025 50  0001 C CNN
+F 1 "GND" H 905 7102 50  0000 C CNN
+F 2 "" H 900 7275 50  0000 C CNN
+F 3 "" H 900 7275 50  0000 C CNN
+	1    900  7275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  7125 950  7275
+Wire Wire Line
+	950  7275 900  7275
+Wire Wire Line
+	850  7125 850  7275
+Wire Wire Line
+	850  7275 900  7275
+Connection ~ 900  7275
+Wire Wire Line
+	850  7125 650  7125
+Text GLabel 1550 6125 2    50   Input ~ 0
+D-
+Text GLabel 1400 2700 0    50   Input ~ 0
+D-
+Text GLabel 1550 6325 2    50   Input ~ 0
+D+
+Text GLabel 1400 2600 0    50   Input ~ 0
+D+
+$Comp
+L power:+5V #PWR?
+U 1 1 60E6B79B
+P 1550 5625
+F 0 "#PWR?" H 1550 5475 50  0001 C CNN
+F 1 "+5V" V 1565 5753 50  0000 L CNN
+F 2 "" H 1550 5625 50  0001 C CNN
+F 3 "" H 1550 5625 50  0001 C CNN
+	1    1550 5625
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
